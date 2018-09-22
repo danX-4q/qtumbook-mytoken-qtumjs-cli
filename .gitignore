@@ -1,4 +1,5 @@
 
 node_modules/
 zeppelin-solidity/
-
+node*--index.js
+wrp-index.js
