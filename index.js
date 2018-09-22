@@ -6,9 +6,9 @@ const {
   Qtum,
 } = require("qtumjs")
 
-const repoData = require("./solar.json")
+const repoData = require("./solar.development.json")
 const qtum = new Qtum("http://qtum:test@localhost:4889", repoData)
-const myToken = qtum.contract("zeppelin-solidity/contracts/token/CappedToken.sol")
+const myToken = qtum.contract("zeppelin-solidity/contracts/token/ERC20/ERC20Capped.sol")
 
 async function totalSupply() {
   const result = await myToken.call("totalSupply")
